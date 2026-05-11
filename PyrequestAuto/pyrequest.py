@@ -119,7 +119,7 @@ class CurlTool(ctk.CTk):
         self.geometry("1050x880")
 
         # CURL输入
-        ctk.CTkLabel(self, text="📥 粘贴CURL：").pack(anchor="w", padx=15, pady=(10, 2))
+        ctk.CTkLabel(self, text="请输入你的-Curl：").pack(anchor="w", padx=15, pady=(10, 2))
         self.txt_curl = ctk.CTkTextbox(self, height=6)
         self.txt_curl.pack(fill="x", padx=15)
 
