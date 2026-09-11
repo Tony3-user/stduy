@@ -94,7 +94,7 @@ def generate_code(method, url, headers, body, query, use_assert, ok_codes):
         else:
             code.append(f"res = requests.{method.lower()}(url, headers=headers, data=payload)")
 
-    code.append("\nprint('状态码111111111111：', res.status_code)")
+    code.append("\nprint('状态码：', res.status_code)")
 
     if use_assert:
         code.append(f"ok_list = [{ok_codes}]")
